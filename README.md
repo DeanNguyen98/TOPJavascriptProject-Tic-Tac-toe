@@ -12,3 +12,5 @@ What I've learned after this project:
 - Using revealing module pattern to return private variables.
 
 - How to manage indexes in an array.
+
+<a href="https://deannguyen98.github.io/Tic-tac-toe/">Live Demo</a>
