@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "style.css">
+    
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <header id="header">
+        <h1>TIC-TAC-TOE</h1>
+    </header>
+
+   <main id="main">
+        <div id="winning-message"></div>
+        <div class="main-container">
+            <div id="gameboard">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+
+            <div id="scorecard-container">
+                <div class="scorecard score1">Player 1: <span class="score" id="player1-score"></span></div>
+                <div class="scorecard score2">Draw: <span class="score" id="draw-score"></span></div>
+                <div class="scorecard score3">Player 2: <span class="score" id="player2-score"></span></div>
+            </div>
+
+            <div id="restart">
+                <button id="restart-btn">restart</button>
+            </div>
+        </div> 
+   </main>
+
+   <footer class="footer">
+    <p>Copyright DeanNguyen
+        <a href="https://github.com/DeanNguyen98">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0Zm2 4a2 2 0 1 0-2.95 1.76 1.87 1.87 0 0 0-.32.24H3.75a.75.75 0 0 0 0 1.5h2.363l-.607 5.67a.75.75 0 1 0 1.49.16l.25-2.33h1.508l.25 2.33a.75.75 0 0 0 1.492-.16L9.888 7.5h2.362a.75.75 0 0 0 0-1.5H9.27a1.98 1.98 0 0 0-.32-.24A2 2 0 0 0 10 4Z"></path></svg>
+        </a>  
+    </p>
+   </footer>
+   <script src="script2.js"></script>
+</body>
+</html>

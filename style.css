@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "All";
+    src: url(fonts/AllIsQuietDEMO-Regular.ttf);
+}
+
+:root {
+    --grey: #1F1F1F;
+    --body-background: #A9A9A9;
+    --dark-grey: #808080;
+}
+
+html {
+    min-height: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-family: "All", sans-serif;
+    box-sizing:border-box;
+}
+
+#header{
+    background-color: var(--grey);
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#winning-message {
+    font-family: inherit;
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+
+#gameboard {
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-content: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cell:hover {
+    cursor: pointer;
+    background-color: var(--dark-grey);
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(3n+1) {
+    border-left: none;
+}
+
+.cell:nth-child(3n+3) {
+    border-right: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+    border-bottom: none;
+}
+
+#scorecard-container {
+    height: 150px;
+    display: flex;
+    align-items:center;
+    flex: 1 auto;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.scorecard {
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+#restart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#restart button {
+    border: 1px solid black;
+    padding: 5px 15px;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    font-family: inherit;
+    margin-bottom: 15px;
+
+}
+
+#restart button:hover {
+    background-color: var(--dark-grey);
+    cursor: pointer;
+}
+
+.score {
+     font-family: "All", sans-serif;
+
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-top: 25px;
+  }
+
+  .icon {
+    font-size: 1.5rem; 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .icon:hover {
+    transform: rotate(360deg) scale(1.2);
+  }
